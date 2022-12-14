@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ask Moose</title>
+        <link rel="stylesheet" href="index.css">
+    </head>
+
+    <body>
+        <nav>
+            <ul class="navbar">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./ask-moose.html">Ask Moose</a></li>
+                <li><a href="./pomeranian.html">Pomeranians</a></li>
+                <li><a href="./pom-pics.html">Gallery</a></li>
+            </ul>
+        </nav>
+
+        <form>
+            <fieldset>
+                <legend>Ask Moose A Question</legend>
+
+                <div>
+                    <label for="firstName">First Name</label>
+                    <input type="text" id="firstName" name="first_name">
+
+                    <label for="lastName">Last Name</label>
+                    <input type="text" id="lastName" name="last_name">
+                </div>
+
+                <div>
+                    <p>Do you have a treat for Moose?</p>
+                    <label for="treats">Yes</label>
+                    <input type="checkbox" id="treats">
+                </div>
+
+                <div>
+                    <textarea id="question"></textarea>
+                </div>
+
+                <div>
+                    <button type="submit">Submit</button>
+                </div>
+            </fieldset>
+        </form>
+    </body>
+</html>

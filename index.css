@@ -1,0 +1,41 @@
+.navbar {
+    display: flex;
+    justify-content: space-around;
+}
+
+li {
+    list-style: none;
+}
+
+h2 {
+    margin-left: 30px;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+}
+
+.container-3-wide {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.text-3-wide {
+    width: 300px;
+}
+
+.likes-dislikes {
+    display: flex;
+    flex-direction: row;
+}
+
+.likes {
+    margin-right: 20px;
+}
+
+.moose-pic {
+    display: flex;
+    justify-content: center;
+}
