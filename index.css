@@ -1,3 +1,4 @@
+/* general styling and home page*/
 body {
     background-color: #E1EFE6;
 }
@@ -63,20 +64,24 @@ h3 {
     flex-direction: row;
 }
 
+#anchor-container{
+    margin: 10px 35%;
+}
+
 #moose-pic-container {
     display: flex;
     justify-content: center;
-    margin-top: 40px;
 }
 
 #moose-pic {
-    border-radius: 5px;
-    width: 25%;
-    height: 25%;
+    border: 2px solid #EFCB68;
+    border-radius: 15px;
+    width: 50%;
+    height: 50%;
 }
 
 
-/* styling for "ask-moose" page */
+/* styling for "ask-moose" page below */
 
 form {
     display: flex;
@@ -112,7 +117,7 @@ input:focus, input:active, select:active, select:focus, textarea:focus, textarea
     border: 3px solid #EFCB68;
 }
 
-/* styling for pomeranians page */
+/* styling for pomeranians page below */
 
 .link-container {
     display: flex;
@@ -128,7 +133,7 @@ input:focus, input:active, select:active, select:focus, textarea:focus, textarea
     margin-top: 15px;
 }
 
-/* styling for gallery */
+/* styling for gallery below */
 
 .pom-pic-container {
     display: grid;
