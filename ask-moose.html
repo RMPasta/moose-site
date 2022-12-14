@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Ask Moose</title>
+        <title>Moose - Ask Moose</title>
         <link rel="stylesheet" href="index.css">
     </head>
 
@@ -16,31 +16,38 @@
         </nav>
 
         <form>
-            <fieldset>
-                <legend>Ask Moose A Question</legend>
+            <div class="form-container">
+                <fieldset>
+                    <legend>Ask Moose A Question</legend>
 
-                <div>
-                    <label for="firstName">First Name</label>
-                    <input type="text" id="firstName" name="first_name">
+                    <div>
+                        <label for="firstName">First Name</label>
+                        <input type="text" id="firstName" name="first_name">
+                    </div>
 
-                    <label for="lastName">Last Name</label>
-                    <input type="text" id="lastName" name="last_name">
-                </div>
+                    <div>
+                        <label for="lastName">Last Name</label>
+                        <input type="text" id="lastName" name="last_name">
+                    </div>
 
-                <div>
-                    <p>Do you have a treat for Moose?</p>
-                    <label for="treats">Yes</label>
-                    <input type="checkbox" id="treats">
-                </div>
+                    <div>
+                        <p id="treat-question">Do you have a treat for Moose?</p>
+                        <label for="treats">Yes</label>
+                        <input type="checkbox" id="treats" required>
+                    </div>
 
-                <div>
-                    <textarea id="question"></textarea>
-                </div>
+                    <div>
+                        <label for="question">What would you like to ask Moose?</label>
+                        <div>
+                            <textarea id="question"></textarea>
+                        </div>
+                    </div>
 
-                <div>
-                    <button type="submit">Submit</button>
-                </div>
-            </fieldset>
+                    <div>
+                        <button type="submit">Submit</button>
+                    </div>
+                </fieldset>
+            </div>
         </form>
     </body>
 </html>

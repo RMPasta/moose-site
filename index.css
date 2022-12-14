@@ -1,13 +1,34 @@
+body {
+    background-color: #E1EFE6;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h3, p, li, a, label, legend, button {
+    color: #000411;
+    font-family: 'Neutron', sans-serif;
+}
+
 .navbar {
     display: flex;
     justify-content: space-around;
+    margin-left: 60%;
 }
 
 li {
     list-style: none;
 }
 
+h1 {
+    color: #160C28;
+    font-family: 'Overlock';
+}
+
 h2 {
+    color: #160C28;
+    font-family: 'Overlock';
     margin-left: 30px;
 }
 
@@ -20,10 +41,12 @@ h2 {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    margin: 0 300px;
 }
 
 .text-3-wide {
     width: 300px;
+    text-align: center;
 }
 
 .likes-dislikes {
@@ -32,10 +55,66 @@ h2 {
 }
 
 .likes {
-    margin-right: 20px;
+    margin-right: 15px;
 }
 
-.moose-pic {
+#moose-pic-container {
     display: flex;
     justify-content: center;
+    margin-top: 40px;
+}
+
+#moose-pic {
+    border-radius: 5px;
+    width: 25%;
+    height: 25%;
+}
+
+
+/* styling for "ask-moose" page */
+
+form {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.form-container {
+    width: 30%;
+}
+
+fieldset {
+    display: flex;
+    flex-direction: column;
+    border-color: #AEB7B3;
+    align-items: center;
+}
+
+legend {
+    text-align: center;
+}
+
+#treat-question {
+    margin-bottom: 0;
+}
+
+#treats {
+    margin-bottom: 10px;
+}
+
+input:focus, input:active, select:active, select:focus, textarea:focus, textarea:active {
+    outline: none;
+    border: 3px solid #EFCB68;
+}
+
+/* styling for pomeranians page */
+
+.link-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#links {
+    text-align: center;
 }

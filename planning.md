@@ -6,7 +6,7 @@ Nav nav-items
 font: Neutron
 color: #000411
 
-H3 sub-headers
+H2 sub-headers
 font: Overlock
 color: #160C28
 
