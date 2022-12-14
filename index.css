@@ -3,7 +3,8 @@ body {
 }
 
 h1 {
-    font-size: 3rem;
+    font-size: 2.5rem;
+    margin-top: 50px;
 }
 
 h3, p, li, a, label, legend, button {
@@ -26,10 +27,18 @@ h1 {
     font-family: 'Overlock';
 }
 
+#strong {
+    font-size: 4rem;
+}
+
 h2 {
     color: #160C28;
     font-family: 'Overlock';
     margin-left: 30px;
+}
+
+h3 {
+    margin-left: 25px;
 }
 
 .header {
@@ -41,7 +50,7 @@ h2 {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    margin: 0 300px;
+    margin: 0 400px;
 }
 
 .text-3-wide {
@@ -52,10 +61,6 @@ h2 {
 .likes-dislikes {
     display: flex;
     flex-direction: row;
-}
-
-.likes {
-    margin-right: 15px;
 }
 
 #moose-pic-container {
@@ -117,4 +122,31 @@ input:focus, input:active, select:active, select:focus, textarea:focus, textarea
 
 #links {
     text-align: center;
+}
+
+.link {
+    margin-top: 15px;
+}
+
+/* styling for gallery */
+
+.pom-pic-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 20px;
+    margin: 20px 300px;
+}
+
+.pom-pic {
+    width: 383px;
+    height: 504px;
+    border: 4px solid #EFCB68;
+    border-radius: 30px;
+}
+
+.gal-label {
+    display: flex;
+    justify-content: center;
+    font-weight: 700;
 }
