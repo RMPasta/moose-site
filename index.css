@@ -1,6 +1,7 @@
 /* general styling and home page*/
 body {
     background-color: #E1EFE6;
+
 }
 
 h1 {
@@ -78,6 +79,7 @@ h3 {
     border-radius: 15px;
     width: 50%;
     height: 50%;
+    filter: drop-shadow(5px 5px 4px #AEB7B3)
 }
 
 
@@ -148,10 +150,12 @@ input:focus, input:active, select:active, select:focus, textarea:focus, textarea
     height: 504px;
     border: 4px solid #EFCB68;
     border-radius: 30px;
+    filter: drop-shadow(4px 4px 5px #AEB7B3)
 }
 
 .gal-label {
     display: flex;
     justify-content: center;
     font-weight: 700;
+    margin-bottom: 3px;
 }
