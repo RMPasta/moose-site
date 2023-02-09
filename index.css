@@ -1,7 +1,6 @@
 /* general styling and home page*/
 body {
     background-color: #E1EFE6;
-
 }
 
 h1 {
@@ -16,8 +15,9 @@ h3, p, li, a, label, legend, button {
 
 .navbar {
     display: flex;
-    justify-content: space-around;
-    margin-left: 60%;
+    justify-content: flex-end;
+    gap: 30px;
+    margin-right: 80px;
 }
 
 li {
@@ -36,11 +36,10 @@ h1 {
 h2 {
     color: #160C28;
     font-family: 'Overlock';
-    margin-left: 30px;
 }
 
 h3 {
-    margin-left: 25px;
+    /* margin-left: 25px; */
 }
 
 .header {
@@ -50,19 +49,17 @@ h3 {
 
 .container-3-wide {
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    margin: 0 400px;
+    justify-content: center;
+    margin: 0 auto;
 }
 
 .text-3-wide {
-    width: 300px;
+    width: 320px;
     text-align: center;
 }
 
 .likes-dislikes {
     display: flex;
-    flex-direction: row;
 }
 
 #anchor-container{
@@ -137,12 +134,19 @@ input:focus, input:active, select:active, select:focus, textarea:focus, textarea
 
 /* styling for gallery below */
 
+#grid-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .pom-pic-container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    grid-gap: 20px;
-    margin: 20px 300px;
+    grid-auto-rows: auto;
+    grid-gap: 100px;
+    transition: 2s ease-in all;
 }
 
 .pom-pic {
@@ -155,7 +159,25 @@ input:focus, input:active, select:active, select:focus, textarea:focus, textarea
 
 .gal-label {
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
     font-weight: 700;
     margin-bottom: 3px;
+}
+
+
+@media screen and (max-width: 1500px) {
+    .pom-pic-container {
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 20px
+    }
+}
+
+
+@media screen and (max-width: 1000px) {
+    .pom-pic-container {
+        grid-template-columns: 1fr;
+        grid-gap: 20px
+    }
 }
