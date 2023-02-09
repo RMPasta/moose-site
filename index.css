@@ -38,10 +38,6 @@ h2 {
     font-family: 'Overlock';
 }
 
-h3 {
-    /* margin-left: 25px; */
-}
-
 .header {
     display: flex;
     justify-content: center;
